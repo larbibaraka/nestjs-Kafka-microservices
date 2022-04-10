@@ -12,7 +12,7 @@ import { AppService } from './app.service';
        options : {
          client : {
            clientId : 'billing',
-           brokers : ['localhost:9002']
+           brokers : ['localhost:9092']
          },
          consumer : {
            groupId : 'billing-consumer'
