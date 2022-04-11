@@ -5,7 +5,7 @@ export class OrderCreatedEvent {
     public readonly price: number,
   ) {}
 
-  //   i added this in order to help nestjs to stringify my object
+  //   i added this in order to help nestjs to stringify my object and not use kafka serialisation
   toString() {
     return JSON.stringify({
       orderId: this.orderId,
